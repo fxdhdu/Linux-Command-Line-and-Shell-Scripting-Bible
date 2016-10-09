@@ -1,0 +1,5 @@
+#!/bin/bash
+for test in nev "n h" "n m" "n y"
+do
+	echo "now going to $test"
+done
