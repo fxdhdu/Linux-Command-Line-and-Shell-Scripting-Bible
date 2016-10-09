@@ -1,0 +1,13 @@
+#!/bin/bash
+for (( var1=1; var1<4; var1++ ))
+do
+	echo "outer loop: $var1"
+	for (( var2=1; var2<100; var2++ ))
+	do
+		if [ $var2 -eq 5 ]
+		then
+			break 2
+		fi
+		echo "    inner loop: $var2"
+	done
+done

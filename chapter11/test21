@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ ./test199 -nt ./test188 ]
+then
+	echo "The test199 file is newer than test188"
+else
+	echo "The test188 file is newer than test199"
+fi
